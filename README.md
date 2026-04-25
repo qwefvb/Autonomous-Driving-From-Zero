@@ -90,7 +90,9 @@
 
 总结与展望，希望在自动驾驶的道路上与您共勉。
 下面附上个人微信，欢迎交流
-<img src="assets/images/wechat.jpg" width="150" alt="wechat">
+<div align="center">
+  <img src="assets/images/wechat.jpg" width="150" alt="wechat">
+</div>
 
 ---
 
