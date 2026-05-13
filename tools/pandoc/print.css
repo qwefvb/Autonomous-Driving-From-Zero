@@ -1,0 +1,242 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  color: #1f2328;
+  background: #f3f0e8;
+  font-family: "Charter", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  line-height: 1.75;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 56px 72px;
+  background: #fffdf8;
+  box-shadow: 0 24px 60px rgba(79, 58, 28, 0.08);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #18222f;
+  font-family: "Avenir Next", "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  line-height: 1.25;
+  margin-top: 1.8em;
+  margin-bottom: 0.7em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 3px solid #d8c59b;
+}
+
+h2 {
+  font-size: 1.7rem;
+  padding-left: 0.7rem;
+  border-left: 6px solid #c97339;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p,
+li,
+blockquote,
+table {
+  font-size: 1rem;
+}
+
+a {
+  color: #a24c1a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.2rem auto;
+}
+
+pre,
+code {
+  font-family: "SFMono-Regular", "SF Mono", "Menlo", "Consolas", monospace;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem 1.1rem;
+  border: 1px solid #e8dfcf;
+  border-radius: 12px;
+  background: #fcf8f1;
+}
+
+code {
+  padding: 0.12rem 0.3rem;
+  border-radius: 0.35rem;
+  background: #f4eee2;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+blockquote {
+  margin: 1.25rem 0;
+  padding: 0.3rem 1rem;
+  border-left: 4px solid #d7c3a0;
+  color: #4f5b66;
+  background: #faf6ee;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e3d8c5;
+  margin: 2.2rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0 1.8rem;
+}
+
+th,
+td {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #e6dccb;
+  vertical-align: top;
+}
+
+th {
+  background: #f5efe3;
+}
+
+.admonition {
+  margin: 1.4rem 0;
+  padding: 0.95rem 1.1rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #e6dccb;
+  background: #fbf8f2;
+}
+
+.admonition-title > p {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  font-family: "Avenir Next", "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.admonition-note {
+  border-left: 6px solid #4b91f1;
+}
+
+.admonition-tip {
+  border-left: 6px solid #2c9a5f;
+}
+
+.admonition-important {
+  border-left: 6px solid #7b5cff;
+}
+
+.admonition-warning {
+  border-left: 6px solid #d08916;
+}
+
+.admonition-caution {
+  border-left: 6px solid #c53f3f;
+}
+
+.mermaid {
+  background: #fff;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.sourceCode {
+  background: #fcf8f1;
+}
+
+.render-notice {
+  margin: 0 0 1.4rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #e6dccb;
+  font-family: "Avenir Next", "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.render-notice-mermaid {
+  background: #fff7e8;
+  border-left: 6px solid #d08916;
+}
+
+.render-notice-mathjax {
+  background: #eef7ff;
+  border-left: 6px solid #4b91f1;
+}
+
+.doc-anchor {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+@page {
+  size: A4;
+  margin: 16mm 14mm 18mm;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  main {
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+    background: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+  }
+
+  .doc-anchor-chapter {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  main > .doc-anchor-chapter:first-child {
+    break-before: auto;
+    page-break-before: auto;
+  }
+
+  pre,
+  blockquote,
+  table,
+  .admonition {
+    page-break-inside: avoid;
+  }
+}
